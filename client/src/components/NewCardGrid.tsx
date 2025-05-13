@@ -12,7 +12,7 @@ export function NewCardGrid() {
       <div className="light-effect"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 data-aos="fade-up" className="text-3xl md:text-5xl font-bold mb-16 text-center">
+        <h2 data-aos="fade-up" className="text-5xl md:text-7xl font-bold mb-20 text-center">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">SMTP 核心概念</span>
         </h2>
         
