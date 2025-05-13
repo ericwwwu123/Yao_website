@@ -13,7 +13,7 @@ export function CardGrid() {
       <div className="light-effect"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 data-aos="fade-up" className="text-2xl md:text-4xl font-bold mb-12 text-center">
+        <h2 data-aos="fade-up" className="text-xl md:text-2xl font-bold mb-12 text-center">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">SMTP 核心概念</span>
         </h2>
         
@@ -78,7 +78,7 @@ const GridItem = ({ icon, title, description }: GridItemProps) => {
               {icon}
             </div>
             <div className="space-y-3">
-              <h3 className="pt-0.5 text-xl leading-[1.375rem] font-semibold font-sans tracking-[-0.04em] text-balance text-indigo-100 transition-all duration-300 group-hover:text-white">
+              <h3 className="pt-0.5 text-base leading-[1.375rem] font-semibold font-sans tracking-[-0.04em] text-balance text-indigo-100 transition-all duration-300 group-hover:text-white">
                 {title}
               </h3>
               <div className="font-sans text-sm leading-[1.5rem] text-slate-300 transition-all duration-300 group-hover:text-slate-200">
