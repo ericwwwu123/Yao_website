@@ -2,13 +2,16 @@ const CodeExample = () => {
   return (
     <section className="bg-slate-800 py-16 mb-20 relative overflow-hidden">
       {/* 科幻风格动画背景 */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-slate-900/60 to-purple-900/40 animate-gradient-slow"></div>
+      <div className="absolute inset-0 animate-gradient-slow"></div>
       
       {/* 网格和扫描线效果 */}
       <div className="absolute inset-0 bg-grid-pattern"></div>
       
       {/* 额外的技术感圆点图案 */}
       <div className="tech-dots"></div>
+      
+      {/* 光照效果 */}
+      <div className="light-effect"></div>
       
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <h2 data-aos="fade-up" className="text-2xl md:text-4xl font-bold mb-10 text-center text-white">
@@ -19,6 +22,11 @@ const CodeExample = () => {
           {/* 代码块上方的装饰元素 */}
           <div className="absolute top-0 right-0 h-1 w-24 bg-gradient-to-r from-blue-400 to-indigo-500"></div>
           <div className="absolute top-0 left-0 h-1 w-12 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+          
+          {/* 代码块装饰角标 - 左上 */}
+          <div className="absolute -top-1 -left-1 w-6 h-6 border-t-2 border-l-2 border-cyan-400/50 rounded-tl-md"></div>
+          {/* 代码块装饰角标 - 右上 */}
+          <div className="absolute -top-1 -right-1 w-6 h-6 border-t-2 border-r-2 border-pink-400/50 rounded-tr-md"></div>
           
           <pre className="relative overflow-x-auto"><code className="block p-2">
 <span className="text-green-400">S: </span><span className="text-yellow-300">220 mail.example.com ESMTP Postfix</span>
@@ -44,12 +52,21 @@ const CodeExample = () => {
           {/* 代码块下方的装饰元素 */}
           <div className="absolute bottom-0 left-0 h-1 w-16 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
           <div className="absolute bottom-0 right-0 h-1 w-20 bg-gradient-to-r from-indigo-500 to-purple-500"></div>
+          
+          {/* 代码块装饰角标 - 左下 */}
+          <div className="absolute -bottom-1 -left-1 w-6 h-6 border-b-2 border-l-2 border-indigo-400/50 rounded-bl-md"></div>
+          {/* 代码块装饰角标 - 右下 */}
+          <div className="absolute -bottom-1 -right-1 w-6 h-6 border-b-2 border-r-2 border-purple-400/50 rounded-br-md"></div>
         </div>
         
         <div className="bg-indigo-900/30 backdrop-blur-sm rounded-xl p-6 border border-indigo-800/50 shadow-xl relative">
           {/* 背景装饰元素 */}
           <div className="absolute -top-2 -left-2 w-12 h-12 border-t-2 border-l-2 border-blue-400/30 rounded-tl-lg"></div>
           <div className="absolute -bottom-2 -right-2 w-12 h-12 border-b-2 border-r-2 border-purple-400/30 rounded-br-lg"></div>
+          
+          {/* 科技装饰线 */}
+          <div className="absolute top-1/2 left-0 h-px w-full bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"></div>
+          <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-indigo-500/20 to-transparent"></div>
           
           <h3 className="text-xl font-semibold mb-3 text-indigo-200">
             <span className="inline-block mr-2">
