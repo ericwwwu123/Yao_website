@@ -4,6 +4,7 @@ import ChapterOne from "@/components/ChapterOne";
 import ChapterTwo from "@/components/ChapterTwo";
 import ChapterThree from "@/components/ChapterThree";
 import CodeExample from "@/components/CodeExample";
+import { CardGrid } from "@/components/CardGrid";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 
@@ -26,6 +27,7 @@ const Home = () => {
         <ChapterTwo />
         <ChapterThree />
       </main>
+      <CardGrid />
       <CodeExample />
       <Footer />
     </div>
