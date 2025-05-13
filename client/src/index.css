@@ -81,6 +81,13 @@
     opacity: 0.3;
   }
   
+  /* 为发光效果添加样式 */
+  .glow::after {
+    content: "" !important;
+    mask-composite: intersect !important;
+    -webkit-mask-composite: source-in !important;
+  }
+  
   /* 添加科技图案纹理 */
   .animate-gradient-slow::after {
     content: '';

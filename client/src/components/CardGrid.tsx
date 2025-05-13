@@ -63,25 +63,25 @@ interface GridItemProps {
 const GridItem = ({ icon, title, description }: GridItemProps) => {
   return (
     <li data-aos="fade-up" data-aos-delay="150" className="list-none min-h-[16rem]">
-      <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-slate-700/70 p-2">
+      <div className="relative h-full rounded-[1.25rem] border-[0.75px] border-slate-700/70 p-2 transition-all duration-300 hover:border-indigo-500/50 group">
         <GlowingEffect
           spread={40}
           glow={true}
           disabled={false}
           proximity={64}
           inactiveZone={0.01}
-          borderWidth={3}
+          borderWidth={2}
         />
-        <div className="relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-[0.75px] border-slate-700/50 bg-slate-900/70 backdrop-blur-sm p-6 shadow-sm">
+        <div className="group-hover:border-indigo-500/30 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl border-[0.75px] border-slate-700/50 bg-slate-900/70 backdrop-blur-sm p-6 shadow-sm transition-all duration-300">
           <div className="relative flex flex-1 flex-col justify-between gap-4">
-            <div className="w-fit rounded-lg border-[0.75px] border-indigo-500/30 bg-indigo-950/30 p-3">
+            <div className="w-fit rounded-lg border-[0.75px] border-indigo-500/30 bg-indigo-950/30 p-3 transition-all duration-300 group-hover:bg-indigo-900/40 group-hover:border-indigo-400/50">
               {icon}
             </div>
             <div className="space-y-3">
-              <h3 className="pt-0.5 text-xl leading-[1.375rem] font-semibold font-sans tracking-[-0.04em] text-balance text-indigo-100">
+              <h3 className="pt-0.5 text-xl leading-[1.375rem] font-semibold font-sans tracking-[-0.04em] text-balance text-indigo-100 transition-all duration-300 group-hover:text-white">
                 {title}
               </h3>
-              <div className="font-sans text-sm leading-[1.5rem] text-slate-300">
+              <div className="font-sans text-sm leading-[1.5rem] text-slate-300 transition-all duration-300 group-hover:text-slate-200">
                 {description}
               </div>
             </div>
