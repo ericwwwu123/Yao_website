@@ -4,7 +4,7 @@ import { GlowingCard } from "./GlowingCard";
 
 export function NewCardGrid() {
   return (
-    <section className="py-16 relative overflow-hidden w-full">
+    <section className="py-20 relative overflow-hidden w-full">
       {/* 背景效果 */}
       <div className="absolute inset-0 animate-gradient-slow"></div>
       <div className="absolute inset-0 bg-grid-pattern"></div>
@@ -12,11 +12,11 @@ export function NewCardGrid() {
       <div className="light-effect"></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <h2 data-aos="fade-up" className="text-2xl md:text-4xl font-bold mb-12 text-center">
+        <h2 data-aos="fade-up" className="text-3xl md:text-5xl font-bold mb-16 text-center">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">SMTP 核心概念</span>
         </h2>
         
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <GlowingCard
             icon={<MailIcon />}
             title="简单邮件传输协议"
